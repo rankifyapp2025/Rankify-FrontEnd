@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./MultiUserPage.module.scss";
 import { useNavigate } from "react-router-dom";
+import MainLayout from "../../Components/MainLayout";
 
 const MultiUserPage = () => {
   const [department, setDepartment] = useState("");
@@ -23,6 +24,7 @@ const MultiUserPage = () => {
   };
 
   return (
+    <MainLayout>
     <div className={styles.wrapper}>
       <div className={styles.section}>
         <h2 className={styles.heading}> Multi User Management</h2>
@@ -119,6 +121,7 @@ const MultiUserPage = () => {
         </div>
       </div>
     </div>
+    </MainLayout>
   );
 };
 

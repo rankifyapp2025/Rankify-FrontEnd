@@ -1,77 +1,97 @@
 .heading {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.subHeading {
+  margin-bottom: 1.5rem;
+  color: #a1a1aa;
+  font-size: 1rem;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: 1px solid #38fcd3;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: #94a3b8;
   }
-  
-  .subHeading {
-    margin-bottom: 1.5rem;
-    color: #666;
+
+  &:focus {
+    border-color: #06d6a0;
   }
-  
-  .form {
-    margin-bottom: 1rem;
-  }
-  
-  .inputGroup {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .label {
-    margin-bottom: 0.25rem;
-    font-weight: 500;
-  }
-  
-  .input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .passwordLabel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .forgotLink {
-    font-size: 0.8rem;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .forgotLink:hover {
+}
+
+.passwordLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e8f0;
+}
+
+.forgotLink {
+  font-size: 0.8rem;
+  color: #38fcd3;
+  text-decoration: none;
+
+  &:hover {
     text-decoration: underline;
   }
-  
-  .checkboxGroup {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.buttonGroup {
+  margin-top: 1.5rem;
+}
+
+.signInButton {
+  background-color: #38fcd3;
+  color: #0f172a;
+  padding: 0.75rem;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #2ed4b4;
   }
-  
-  .checkbox {
-    cursor: pointer;
-  }
-  
-  .buttonGroup {
-    margin-top: 1rem;
-  }
-  
-  .signInButton {
-    background-color: #696cff;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    width: 100%;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  
-  .signInButton:hover {
-    background-color: #5a5be1;
-  }
-  
+}

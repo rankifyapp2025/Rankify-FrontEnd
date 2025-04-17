@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./DepartmentManagement.module.scss";
+import MainLayout from "../../Components/MainLayout";
 
 const DepartmentManagement = () => {
   const [departmentName, setDepartmentName] = useState("");
@@ -42,6 +43,7 @@ const DepartmentManagement = () => {
   };
 
   return (
+    <MainLayout>
     <div className={styles.pageWrapper}>
       <div className={styles.formWrapper}>
         <h2 className={styles.heading}> Department management</h2>
@@ -130,6 +132,7 @@ const DepartmentManagement = () => {
         </form>
       </div>
     </div>
+    </MainLayout>
   );
 };
 

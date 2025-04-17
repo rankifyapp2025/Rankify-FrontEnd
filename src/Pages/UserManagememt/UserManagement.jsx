@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./UserManagement.module.scss";
 import { useNavigate } from "react-router-dom";
+import MainLayout from "../../Components/MainLayout";
 
  const UserManagement = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -27,6 +28,7 @@ const navigate = useNavigate()
   };
 
   return (
+    <MainLayout>
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h2 className={styles.heading}> User Management</h2>
@@ -87,6 +89,7 @@ const navigate = useNavigate()
         </div>
       </div>
     </div>
+    </MainLayout>
   );
 };
 

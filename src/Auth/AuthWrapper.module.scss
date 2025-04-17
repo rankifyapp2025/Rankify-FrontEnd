@@ -1,55 +1,56 @@
 .containerXxl {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
-  .authenticationWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  .authenticationInner {
-    width: 100%;
-    max-width: 480px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    overflow: hidden;
-  }
-  
-  .cardBody {
-    padding: 2rem;
-  }
-  
-  .appBrand {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .appBrandLink {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .appBrandLogo img {
-    width: 32px;
-    height: auto;
-  }
-  
-  .appBrandText {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.25rem;
-  }
-  
+  width: 100%;
+  // padding: 0 1rem;
+}
+
+.authenticationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #0f172a; /* dark background */
+}
+
+.authenticationInner {
+  width: 100%;
+  max-width: 480px;
+}
+
+.card {
+  background-color: #1e293b; /* dark card */
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3); /* deeper shadow for dark */
+  overflow: hidden;
+}
+
+.cardBody {
+  padding: 2rem;
+  color: #e2e8f0; /* light text color */
+}
+
+.appBrand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.appBrandLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #38fcd3; /* teal accent */
+}
+
+.appBrandLogo img {
+  width: 32px;
+  height: auto;
+}
+
+.appBrandText {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #38fcd3;
+}

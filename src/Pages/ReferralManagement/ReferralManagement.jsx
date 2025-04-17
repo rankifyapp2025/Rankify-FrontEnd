@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ReferralManagement.module.scss";
+import MainLayout from "../../Components/MainLayout";
 
 const ReferralManagement = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -26,6 +27,7 @@ const ReferralManagement = () => {
   };
 
   return (
+    <MainLayout>
     <div className={styles.pageWrapper}>
       <div className={styles.contentWrapper}>
         <h2 className={styles.heading}>Referral Management</h2>
@@ -69,6 +71,7 @@ const ReferralManagement = () => {
         </div>
       </div>
     </div>
+    </MainLayout>
   );
 };
 

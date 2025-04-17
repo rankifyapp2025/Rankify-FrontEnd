@@ -1,84 +1,148 @@
 .wrapper {
+  padding: 1rem;
+  background-color: #0f172a; /* Dark background */
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
     padding: 1rem;
-    background-color: #f9fafb;
-    min-height: 100vh;
   }
-  
-  .section {
-    max-width: 42rem;
-    margin: 1.5rem auto;
-  }
-  
-  .heading {
+}
+
+.section {
+  max-width: 868px;
+  margin: 0rem auto;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38fcd3; /* Teal accent */
+  margin-bottom: 0.75rem;
+
+  @media (max-width: 768px) {
     font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
   }
-  
-  .subHeading {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #94a3b8; /* Light gray */
+}
+
+.card {
+  background: #1e293b; /* Dark card background */
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  overflow: hidden;
+  border: 1px solid #334155; /* Subtle border */
+
+  @media (max-width: 768px) {
+    padding: 1.25rem;
   }
-  
-  .card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #38fcd3; /* Teal accent */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  color: #cbd5e1; /* Light text */
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.input,
+.select {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #334155; /* Dark border */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #f8fafc; /* Light text */
+  background-color: #1e293b; /* Dark input background */
+  outline: none;
+  transition: all 0.2s ease;
+
+  &:focus {
+    border-color: #38fcd3; /* Teal accent */
+    box-shadow: 0 0 0 2px rgba(56, 252, 211, 0.2);
   }
-  
-  .cardTitle {
-    font-size: 1.125rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+}
+
+.select {
+  /* Additional styling for select dropdown */
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338fcd3'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+.button,
+.button2 {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0f172a; /* Dark text */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #38fcd3; /* Teal accent */
+
+  &:hover {
+    background-color: #22d3b8; /* Darker teal */
+    transform: translateY(-1px);
   }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+}
+
+.button2 {
+  background-color: #f87171; /* Red accent */
+  margin-left: 1rem;
+
+  &:hover {
+    background-color: #ef4444; /* Darker red */
+    transform: translateY(-1px);
   }
-  
-  .formGroup {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .label {
-    margin-bottom: 0.25rem;
-    font-weight: 500;
-    color: #374151;
-  }
-  
-  .input,
-  .select {
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
-    width: 100%;
-  }
-  
-  .button {
-    padding: 0.5rem 1rem;
-    background-color: #2563eb;
-    color: white;
-    font-weight: 500;
-    border: none;
-    border-radius: 0.375rem;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #1d4ed8;
-  }
-  .button2 {
-    padding: 0.5rem 1rem;
-    background-color: #eb2525;
-    color: white;
-    font-weight: 500;
-    border: none;
-    margin-left: 2vw;
-    border-radius: 0.375rem;
-    cursor: pointer;
-  }
+}
+
+/* Additional styles for better dark theme experience */
+.radio,
+.checkbox {
+  accent-color: #38fcd3; /* Teal accent for form controls */
+}
+
+.hintText {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.errorText {
+  color: #f87171;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

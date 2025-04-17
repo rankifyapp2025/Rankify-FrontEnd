@@ -1,58 +1,102 @@
-.container {
-    text-align: center;
-    padding: 20px;
+.mainContainer {
+  display: flex;
+  background-color: #0f172a; /* dark background */
+  min-height: 100%;
+  padding: 5px;
+}
 
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .sectionCon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .section1,
 .section2,
 .section3 {
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 8px;
-    min-width: 100px;
-    flex: 1 1 300px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-}
-h3{
-    color: black;
-    font-size:20px;
+  padding: 30px;
+  border-radius: 10px;
+  width: 20vw;
+  background-color: #1e293b; /* dark card background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
 }
 
-/* Tablet screens */
+.section1:hover,
+.section2:hover,
+.section3:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  color: #38fcd3; /* teal heading */
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+p {
+  color: #cbd5e1; /* lighter text for paragraphs */
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Dashboard heading and subheading */
+.container:before {
+  content: "Dashboard";
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #38fcd3; /* teal color for title */
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: 2vw;
+}
+
+.container:after {
+  display: block;
+  font-size: 16px;
+  color: #94a3b8; /* soft blue-gray */
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 768px) {
-    .section1,
-    .section2,
-    .section3 {
-        flex: 1 1 45%;
-    }
+  .section1,
+  .section2,
+  .section3 {
+    flex: 1 1 45%;
+    width: auto;
+  }
 }
 
-/* Mobile screens */
 @media screen and (max-width: 480px) {
-    .section1,
-    .section2,
-    .section3 {
-        flex: 1 1 100%;
-    }
-     .section-con{
-        display: flex;
-     }
-    .container h3 {
-        font-size: 1rem;
-    }
+  .section1,
+  .section2,
+  .section3 {
+    flex: 1 1 100%;
+    width: auto;
+  }
 
-    .container p {
-        font-size: 0.9rem;
-    }
+  .container:before {
+    font-size: 24px;
+  }
+
+  .container:after {
+    font-size: 14px;
+  }
 }
