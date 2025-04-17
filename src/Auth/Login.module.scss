@@ -1,0 +1,77 @@
+.heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .subHeading {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .form {
+    margin-bottom: 1rem;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .passwordLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .forgotLink {
+    font-size: 0.8rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgotLink:hover {
+    text-decoration: underline;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox {
+    cursor: pointer;
+  }
+  
+  .buttonGroup {
+    margin-top: 1rem;
+  }
+  
+  .signInButton {
+    background-color: #696cff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .signInButton:hover {
+    background-color: #5a5be1;
+  }
+  
